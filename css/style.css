@@ -1,0 +1,24 @@
+
+.barra-superior{
+    /*width: 940px;*/
+    position: relative;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: blanchedalmond;
+}
+
+.barra-superior img{
+    width: 20%;
+}
+
+nav{
+    position: absolute;
+    top: 30%;
+    right: 1%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
