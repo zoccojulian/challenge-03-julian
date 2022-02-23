@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*header*/
 
+body{
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+}
+
+
 header{
-    background-color: #ffe4c4;
-    font-family:'Arimo', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EDEDED;
+    padding: 1% 5%;
 }
 
 header h3 img{
@@ -20,9 +27,7 @@ header h3{
 }
 
 #items-barra{
-    position:absolute;
-    top: 1%;
-    right: 2%;
+    padding-top: 0.4rem;
 }
 
 #items-barra li{
@@ -40,19 +45,19 @@ header h3{
 /* sección perfil*/
 
 #perfil{
-    width: 100%;
+    background-color: #EDEDED;
     display: grid;
     grid-template-columns: 70% 30%;
-
+    padding: 2rem 4rem;
 }
 
 #perfil-div{
-    text-align: center;
+    text-align: left;
     
 }
 
 #perfil-div h1{
-   font-size: 30px;
+   font-size: 40px;
    font-weight: bold;
    padding: 2%;
    margin: 2%;
@@ -91,4 +96,26 @@ header h3{
 #perfil-img img{
     border-radius: 100%;
     width: 100%;
+}
+
+#sobre-mi{
+    width: 100%;
+    background-color: #eaf2fd;
+    padding: 2rem 6rem;
+}
+
+#sobre-mi h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#sobre-mi p{
+    width: 70%;
+    margin-top: 1rem;
+    font-size: 30px;
+}
+
+#sobre-mi img{
+    width: 5%;
+    padding-top: 2rem;
 }
