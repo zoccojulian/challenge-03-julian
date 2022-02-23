@@ -120,11 +120,11 @@ header h3{
 
 /*seccion skills*/
 
-#skills{
+.skills{
     background-color: ;
 }
 
-#skills-titulo{
+.skills-titulo{
     text-align: center;
     font-size: 70px;
     font-weight: bold;
@@ -133,9 +133,9 @@ header h3{
 
 #skills-lista ul{
   display: grid;
-  grid-template-columns: 176px 176px 176px;
+  grid-template-columns: 176px 176px 176px 176px 176px;
   justify-content: space-between;
-  padding: 3% 20% 3% 20%;
+  padding: 3% 10% 3% 10%;
 }
 
 #skills-lista li{
@@ -150,11 +150,47 @@ header h3{
 }
 
 #skills-lista li img:hover{
-    width: 6rem;
-    padding-top: 1rem;
+    transform: scale(1.2);
+    filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
+    transition: .1s all;
+    /*width: 6rem;
+    padding-top: 1rem;*/
+    
 }
 
 #skills-lista h3{
     font-size: 20px;
     padding: 0.5rem;
 }
+
+#other-skills-lista ul{
+    display: grid;
+    grid-template-columns: 176px 176px 176px 176px;
+    justify-content: space-between;
+    padding: 3% 10% 3% 10%;
+  }
+  
+  #other-skills-lista li{
+      height: 174px;
+      background-color: white;
+      text-align: center;
+  }
+  
+  #other-skills-lista li img{
+      width: 5rem;
+      padding-top: 2rem;
+  }
+  
+  #other-skills-lista li img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
+    transition: .1s all;
+    /*width: 6rem;
+    padding-top: 1rem;*/
+      
+  }
+  
+  #other-skills-lista h3{
+      font-size: 20px;
+      padding: 0.5rem;
+  }
