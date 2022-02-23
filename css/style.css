@@ -6,13 +6,13 @@
 body{
     width: 100%;
     font-family: "Raleway", sans-serif;
+    background-color: #EDEDED;
 }
 
 
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #EDEDED;
     padding: 1% 5%;
 }
 
@@ -45,7 +45,6 @@ header h3{
 /* sección perfil*/
 
 #perfil{
-    background-color: #EDEDED;
     display: grid;
     grid-template-columns: 70% 30%;
     padding: 2rem 4rem;
@@ -99,7 +98,6 @@ header h3{
 }
 
 #sobre-mi{
-    width: 100%;
     background-color: #eaf2fd;
     padding: 2rem 6rem;
 }
@@ -118,4 +116,45 @@ header h3{
 #sobre-mi img{
     width: 5%;
     padding-top: 2rem;
+}
+
+/*seccion skills*/
+
+#skills{
+    background-color: ;
+}
+
+#skills-titulo{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+#skills-lista ul{
+  display: grid;
+  grid-template-columns: 176px 176px 176px;
+  justify-content: space-between;
+  padding: 3% 20% 3% 20%;
+}
+
+#skills-lista li{
+    height: 174px;
+    background-color: white;
+    text-align: center;
+}
+
+#skills-lista li img{
+    width: 5rem;
+    padding-top: 2rem;
+}
+
+#skills-lista li img:hover{
+    width: 6rem;
+    padding-top: 1rem;
+}
+
+#skills-lista h3{
+    font-size: 20px;
+    padding: 0.5rem;
 }
