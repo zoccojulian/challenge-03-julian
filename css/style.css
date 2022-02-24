@@ -56,10 +56,10 @@ header h3{
 }
 
 #perfil-div h1{
-   font-size: 40px;
-   font-weight: bold;
-   padding: 2%;
-   margin: 2%;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 2%;
+    margin: 2%;
 }
 
 #perfil-div h2{
@@ -118,79 +118,61 @@ header h3{
     padding-top: 2rem;
 }
 
-/*seccion skills*/
-
-.skills{
-    background-color: ;
-}
+/*seccion skills y other eskills*/
 
 .skills-titulo{
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
     padding-top: 2rem;
 }
 
 #skills-lista ul{
-  display: grid;
-  grid-template-columns: 176px 176px 176px 176px 176px;
-  justify-content: space-between;
-  padding: 3% 10% 3% 10%;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    gap: 2.5vh;
+    /*display: grid;
+    grid-template-columns: repeat(5,176px);
+    justify-content:space-around;
+    padding: 3% 10% 3% 10%;*/
+    }
 
-#skills-lista li{
+#other-skills-lista ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    gap: 2.5vh;
+    /*display: grid;
+    grid-template-columns: repeat(4,176px);
+    justify-content:space-around;
+    padding: 3% 10% 3% 10%;*/
+  }
+
+#skills-lista li, #other-skills-lista li{
     height: 174px;
+    width: 176px;
     background-color: white;
     text-align: center;
 }
 
-#skills-lista li img{
+#skills-lista li img,#other-skills-lista li img{
     width: 5rem;
     padding-top: 2rem;
 }
 
-#skills-lista li img:hover{
+#skills-lista li img:hover,#other-skills-lista li img:hover{
     transform: scale(1.2);
     filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
     transition: .1s all;
-    /*width: 6rem;
-    padding-top: 1rem;*/
-    
 }
 
-#skills-lista h3{
+#skills-lista h3,#other-skills-lista h3{
     font-size: 20px;
     padding: 0.5rem;
 }
 
-#other-skills-lista ul{
-    display: grid;
-    grid-template-columns: 176px 176px 176px 176px;
-    justify-content: space-between;
-    padding: 3% 10% 3% 10%;
-  }
-  
-  #other-skills-lista li{
-      height: 174px;
-      background-color: white;
-      text-align: center;
-  }
-  
-  #other-skills-lista li img{
-      width: 5rem;
-      padding-top: 2rem;
-  }
-  
-  #other-skills-lista li img:hover{
-    transform: scale(1.2);
-    filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
-    transition: .1s all;
-    /*width: 6rem;
-    padding-top: 1rem;*/
-      
-  }
-  
-  #other-skills-lista h3{
-      font-size: 20px;
-      padding: 0.5rem;
-  }
