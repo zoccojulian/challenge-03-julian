@@ -128,17 +128,29 @@ header h3{
 }
 
 #skills-lista ul{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    gap: 2.5vh;
+    /*display: grid;
     grid-template-columns: repeat(5,176px);
     justify-content:space-around;
-    padding: 3% 10% 3% 10%;
+    padding: 3% 10% 3% 10%;*/
     }
 
 #other-skills-lista ul{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    gap: 2.5vh;
+    /*display: grid;
     grid-template-columns: repeat(4,176px);
     justify-content:space-around;
-    padding: 3% 10% 3% 10%;
+    padding: 3% 10% 3% 10%;*/
   }
 
 #skills-lista li, #other-skills-lista li{
