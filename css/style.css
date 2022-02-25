@@ -98,12 +98,13 @@ header h3{
 }
 
 #sobre-mi{
+    
     background-color: #eaf2fd;
-    padding: 2rem 6rem;
+    padding: 2vh 10vh;
 }
 
 #sobre-mi h2{
-    font-size: 50px;
+    font-size: 3.5em;
     font-weight: bold;
 }
 
@@ -118,61 +119,45 @@ header h3{
     padding-top: 2rem;
 }
 
-/*seccion skills y other eskills*/
+/*Formato de secciones (skills, otherskills, hobbies)*/
 
-.skills-titulo{
+.secciones-titulo{
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     padding-top: 2rem;
 }
 
-#skills-lista ul{
+.secciones-lista ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 2vh;
     margin-bottom: 5vh;
     gap: 2.5vh;
-    /*display: grid;
-    grid-template-columns: repeat(5,176px);
-    justify-content:space-around;
-    padding: 3% 10% 3% 10%;*/
     }
 
-#other-skills-lista ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2vh;
-    margin-bottom: 5vh;
-    gap: 2.5vh;
-    /*display: grid;
-    grid-template-columns: repeat(4,176px);
-    justify-content:space-around;
-    padding: 3% 10% 3% 10%;*/
-  }
-
-#skills-lista li, #other-skills-lista li{
+.secciones-lista li{
     height: 174px;
     width: 176px;
     background-color: white;
     text-align: center;
 }
 
-#skills-lista li img,#other-skills-lista li img{
+.secciones-lista li img{
     width: 5rem;
     padding-top: 2rem;
 }
 
-#skills-lista li img:hover,#other-skills-lista li img:hover{
+.secciones-lista li img:hover{
     transform: scale(1.2);
     filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
     transition: .1s all;
 }
 
-#skills-lista h3,#other-skills-lista h3{
+.secciones-lista h3{
     font-size: 20px;
     padding: 0.5rem;
 }
+
 
