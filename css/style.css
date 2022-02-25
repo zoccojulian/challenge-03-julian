@@ -1,3 +1,4 @@
+
 /*header*/
 
 body{
@@ -157,4 +158,83 @@ header h3{
     font-size: 20px;
     padding: 0.5rem;
 }
+
+
+@media (max-width: 1040px) {
+
+    #items-barra li{
+        display: none;
+        margin: 0 0 0 15px;
+    }
+    #items-barra li:last-child{
+        display: block;
+        margin: 0 0 0 15px;
+    }
+}
+
+
+
+@media only screen and (max-width:px) {
+
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    
+    #perfil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-wrap: wrap-reverse;
+    }
+
+    #perfil{
+        padding: 0;
+    }
+
+    #perfil-div h1{
+        font-size: 1.6em;
+        padding:0 0.5em;
+    }
+
+    #perfil-div h2{
+        font-size: 1em;
+        padding:0 0.5em;
+    }
+
+    #perfil-img{
+        width: 30%;
+        padding:1em 1em 1em 1.2em;
+    }
+
+    #perfil-contacto{
+        text-align: center;
+    }
+
+    #sobre-mi{
+        padding:0 0.5em;
+    }
+
+    #sobre-mi h2{
+        padding: 0.2em 0.2em 0 0.2em;
+        font-size: 2.5em;
+    }
+
+    #sobre-mi p{
+        width: 95%;
+        margin:0.5em 0.5em;
+    }
+
+    #sobre-mi img{
+        width: 20%;
+        padding: 0 0 0 2em;
+    }
+
+    .secciones-titulo{
+        font-size: 2.5em;
+    }
+
+}
+
 
