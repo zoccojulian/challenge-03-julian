@@ -67,22 +67,17 @@ header h3{
     margin: 2%;
 }
 
-#perfil-div nav{
+#perfil-contacto{
     padding: 2%;
     margin: 2%;
 }
 
-#perfil-div nav a{
-    padding-left: 5%;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-
 #perfil-contacto a{
     font-size: 15px;
+    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+    padding-right: 1.2em;
 }
 
 #perfil-img{
@@ -172,15 +167,25 @@ header h3{
     }
 }
 
-
-
-@media only screen and (max-width:px) {
-
-}
-
-
-
 @media only screen and (max-width: 550px) {
+    
+    header h3{
+        font-size: 0.7em;
+        padding-top: 0.3em;
+    }
+
+    header h3 img{
+        height: 0.7rem;
+        vertical-align: middle;
+    }
+
+    #items-barra{
+        padding-top: 0;
+    }
+
+    #items-barra a{
+        font-size: 8px;
+    }
     
     #perfil{
     display: flex;
@@ -206,6 +211,10 @@ header h3{
     #perfil-img{
         width: 30%;
         padding:1em 1em 1em 1.2em;
+    }
+
+    #perfil-contacto a{
+        font-size: 12px;
     }
 
     #perfil-contacto{
