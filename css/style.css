@@ -11,7 +11,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1% 5%;
+    padding: 1% 7%;
 }
 
 header h3 img{
@@ -21,7 +21,6 @@ header h3 img{
 
 header h3{
     font-size: 25px;
-    padding-left: 2%;
 }
 
 #items-barra{
@@ -43,33 +42,37 @@ header h3{
 /* sección perfil*/
 
 #perfil{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1% 7%;
+    /*display: grid;
     grid-template-columns: 70% 30%;
-    padding: 2rem 4rem;
+    padding: 1% 7%;*/
 }
 
 #perfil-div{
+    width: 70%;
     text-align: left;
+    padding-top: 2%;
     
 }
 
 #perfil-div h1{
-    font-size: 40px;
+    font-size: 3em;
     font-weight: bold;
-    padding: 2%;
-    margin: 2%;
 }
 
 #perfil-div h2{
-    font-size: 20px;
+    font-size: 25px;
     font-style: italic;
-    padding: 2%;
-    margin: 2%;
+    padding-top: 2%;
+
 }
 
 #perfil-contacto{
-    padding: 2%;
-    margin: 2%;
+    padding-top: 3%;
 }
 
 #perfil-contacto a{
@@ -81,8 +84,7 @@ header h3{
 }
 
 #perfil-img{
-    padding: 10%;
-
+    width: 25%;
 }
 
 #perfil-img img{
@@ -93,11 +95,11 @@ header h3{
 #sobre-mi{
     
     background-color: #eaf2fd;
-    padding: 2vh 10vh;
+    padding: 1% 7%;
 }
 
 #sobre-mi h2{
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -117,7 +119,7 @@ header h3{
 
 .secciones-titulo{
     text-align: center;
-    font-size: 50px;
+    font-size: 2.5em;
     font-weight: bold;
     padding-top: 2rem;
 }
@@ -155,6 +157,10 @@ header h3{
 }
 
 
+/*RESPONSIVIDAD -------------------------------------*/
+
+
+/*TABLET-------------------------------------*/
 @media (max-width: 1040px) {
 
     #items-barra li{
@@ -165,32 +171,51 @@ header h3{
         display: block;
         margin: 0 0 0 15px;
     }
+
+    #perfil-div h1{
+        font-size: 1.5em;
+    }
+    
+    #perfil-div h2{
+        font-size: 15px;
+    
+    }
+
+    #sobre-mi p{
+        width: 100%;
+    }
 }
 
+/*CELULAR----------------------------------------*/
 @media only screen and (max-width: 550px) {
     
+    header{
+        padding: 1% 4%;
+    }
+
     header h3{
-        font-size: 0.7em;
-        padding-top: 0.3em;
+        font-size: 1em;
+       
     }
 
     header h3 img{
-        height: 0.7rem;
+        height: 1em;
         vertical-align: middle;
     }
 
     #items-barra{
-        padding-top: 0;
+        padding: 0;
     }
 
     #items-barra a{
-        font-size: 8px;
+        font-size: 0.8em;
+        font-weight: bold;
     }
     
     #perfil{
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: left;*/
     flex-wrap: wrap-reverse;
     }
 
@@ -198,14 +223,17 @@ header h3{
         padding: 0;
     }
 
+    #perfil-div{
+        width: 100%;
+        padding: 0.5em 1.3em;
+    }
+
     #perfil-div h1{
         font-size: 1.6em;
-        padding:0 0.5em;
     }
 
     #perfil-div h2{
         font-size: 1em;
-        padding:0 0.5em;
     }
 
     #perfil-img{
@@ -222,28 +250,35 @@ header h3{
     }
 
     #sobre-mi{
-        padding:0 0.5em;
+        padding:0.5em 0.3em 0.5em 1.3em;
     }
 
     #sobre-mi h2{
-        padding: 0.2em 0.2em 0 0.2em;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     #sobre-mi p{
         width: 95%;
-        margin:0.5em 0.5em;
+        font-size: 1em;
     }
 
     #sobre-mi img{
         width: 20%;
-        padding: 0 0 0 2em;
     }
 
     .secciones-titulo{
-        font-size: 2.5em;
+        font-size: 2em;
+    }
+
+    .secciones-lista li{
+        height: 154px;
+        width: 156px;
+    }
+
+    .secciones-lista li img{
+        width: 4rem;
+        padding-top: 2rem;
     }
 
 }
-
 
