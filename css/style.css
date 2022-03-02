@@ -43,7 +43,7 @@ header h3{
 
 #perfil{
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content:space-between;
     align-items: center;
     padding: 1% 7%;
