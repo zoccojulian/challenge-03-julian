@@ -42,6 +42,10 @@ body{
     text-decoration: none;
 }
 
+.header-nav ul li:hover{
+    transform: scale(1.1);
+}
+
 .header-nav ul li:last-child{
     font-weight: bold;
 }
@@ -82,6 +86,11 @@ body{
     font-size: 1.5em;
     padding-right: 2rem;
 }
+
+.perfil-div-contacto a:hover{
+    text-decoration: underline;
+}
+
 .perfil-img{
     width:25%;
 }
@@ -172,6 +181,7 @@ body{
 
 .formacion-academica{
     padding: 0.5rem 8rem 4rem 8rem;
+    margin-top: 1.5rem;
     background: #EAF2FD;
 }
 
@@ -205,6 +215,7 @@ body{
 .formacion-lista li h2{
     font-size: 1.4em;
     font-weight: 700;
+    padding-top: 1rem;
 }
 
 .formacion-lista li h3{
@@ -220,7 +231,9 @@ body{
     padding-top: 1rem;
 }
 
-
+.experiencia-seccion img{
+    width: 50%;
+}
 
 /*experiencia impar*/
 .experiencia-seccion:nth-child(even){
@@ -255,7 +268,7 @@ body{
 }
 
 .experiencia-descripcion h3{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 500;
     font-style: italic;
     
@@ -335,14 +348,21 @@ body{
 }
 
 .enviar{
-    width: 20%;
-    padding: 1em 0;
+    width: 135px;
+    padding: 1em 0.8em;
 }
 
 
 
+/*---------TABLET-------------------------------*/
 
 @media (max-width: 1040px){
+
+    /*header*/
+
+    .header{
+        padding: 0.5rem 2rem;
+    }
 
     .header-nav ul li{
         display: none;
@@ -351,6 +371,93 @@ body{
     .header-nav ul li:last-child{
         display:contents;
     }
-   
 
+    .perfil{
+        padding: 0.5rem 2rem;
+    }
+
+    .perfil-div h1{
+        font-size: 1.8em;
+    
+    }
+    
+    .perfil-div h2{
+        font-size: 1.1em;
+    }
+
+    .perfil-div-contacto a{
+        font-size: 1.1em;
+    }
+
+
+    /*Cambio de font-size a todos los titulos*/
+    .titulos{
+        font-size: 1.8em;
+    }
+
+
+    /*sobreMi*/
+
+    .sobreMi{
+        padding: 0.5rem 2rem;
+    }
+
+    .sobreMi div{
+        padding: 0;
+    }
+
+    /*Formacion Academica*/
+
+    .formacion-academica{
+        padding: 0.5rem 2rem;
+    }
+
+    .formacion-lista li div{
+        height: 150px;
+    }
+
+    .formacion-lista li h2{
+        font-size: 1.2em;
+    }
+    
+    .formacion-lista li h3{
+        font-size: 1em;
+    }
+
+    /*Experiencia*/
+
+    .experiencia{
+        padding: 0.5rem 2rem;
+    }
+
+    .experiencia-seccion img{
+        width: 100%
+    }
+
+    .experiencia-seccion:nth-child(even){
+        flex-direction: column;
+    }
+
+    .experiencia-seccion:nth-child(odd){
+        flex-direction: column;
+
+    }
+
+   .experiencia-descripcion{
+        width: 100%;
+    }
+
+    /*contacto*/
+
+    .contacto{
+        padding: 0.5rem 2rem;
+    }
+
+    .contacto-div-img{
+        display: none;
+    }
+
+    .contacto-div-form{
+        width: 100%;
+    }
 }
