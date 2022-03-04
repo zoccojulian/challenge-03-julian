@@ -12,18 +12,18 @@
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <h3>
                 <img src="imagenes/logo jz.png">
                 Julian Zocco
             </h3>
-             <nav id="items-barra">
+             <nav class="header-nav">
                  <ul>
-                    <li><a href="">Sobre mi</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Hobbies</a></li>
-                    <li><a href="">Formación</a></li>
-                    <li><a href="">Proyectos</a></li>
+                    <li><a href="#sobreMi">Sobre mi</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#formacion">Formación</a></li>
+                    <li><a href="#experiencia">Proyectos</a></li>
                     <li><a href="">zoccojulian@gmail.com</a></li>
                 </ul>
             </nav>
@@ -31,8 +31,8 @@
         </header>
 
         <main>
-            <section id="perfil">
-                <div id="perfil-div">
+            <section class="perfil">
+                <div class="perfil-div">
                     <h1>
                         Hola, mi nombre es Julian Zocco y Construyo páginas web.
                     </h1>
@@ -41,20 +41,21 @@
                         Soy formado en Diseño audiovisual y actualmente formo parte del proyecto Oracle ONE en Alura Latam.
                     </h2>
 
-                    <nav id="perfil-contacto">
+                    <nav class="perfil-div-contacto">
                         <a href="">Git Hub</a>
                         <a href="">Linkedin</a>
                         <a href="">Curriculum</a>
                     </nav>
                 </div>
 
-                <div id="perfil-img">
+                <div class="perfil-img">
                     <img src="imagenes/foto-perfil.jpg">
                 </div>
             </section>
-            <section id="sobre-mi">
+
+            <section class="sobreMi" id="sobreMi">
                 <div>
-                    <h2>
+                    <h2 class="titulos">
                         Sobre mi
                     </h2>
                     <p>
@@ -69,8 +70,8 @@
 
             </section>
 
-            <section class="secciones">
-                <div class="secciones-titulo">
+            <section class="secciones" id="skills">
+                <div class="secciones-titulo titulos">
                     <h2>Skills</h2>
                 </div>
 
@@ -102,9 +103,10 @@
                         </li>
                     </ul>
                 </div>
+            </section>
 
             <section class="secciones">
-                <div class="secciones-titulo">
+                <div class="secciones-titulo titulos">
                     <h2>Other Skills</h2>
                 </div>
     
@@ -128,42 +130,147 @@
                         </li>      
                     </ul>
                 </div>
+            </section>
 
-                <section class="secciones">
-                    <div class="secciones-titulo">
-                        <h2>Hobbies</h2>
-                    </div>
+            <section class="secciones" id="hobbies">
+                <div class="secciones-titulo titulos">
+                    <h2>Hobbies</h2>
+                </div>
         
-                    <div class="secciones-lista">
-                        <ul>
-                            <li>
-                                <img src="imagenes/icono-nataciom.png">
+                <div class="secciones-lista">
+                    <ul>
+                        <li>
+                            <img src="imagenes/icono-nataciom.png">
                                 <h3>Natación</h3>
-                            </li>
-                            <li>
-                                <img src="imagenes/icono-fotografia.png">
-                                <h3>Fotografía</h3>
-                            </li>
-                            <li>
-                                <img src="imagenes/icono-guitarra.png">
-                                <h3>Tocar Guitarra</h3>
-                            </li>
-                            <li>
-                                <img src="imagenes/icono-musica.png">
-                                <h3>Música</h3>
-                            </li>
-                            <li>
-                                <img src="imagenes/icono-series.png">
-                                <h3>Series</h3>
-                            </li>
-                            <li>
-                                <img src="imagenes/icono-videojuegos.png">
-                                <h3>VideoJuegos</h3>
-                            </li>  
-                        </ul>
+                        </li>
+                        <li>
+                            <img src="imagenes/icono-fotografia.png">
+                            <h3>Fotografía</h3>
+                        </li>
+                        <li>
+                            <img src="imagenes/icono-guitarra.png">
+                            <h3>Tocar Guitarra</h3>
+                        </li>
+                        <li>
+                            <img src="imagenes/icono-musica.png">
+                            <h3>Música</h3>
+                        </li>
+                        <li>
+                            <img src="imagenes/icono-series.png">
+                            <h3>Series</h3>
+                        </li>
+                        <li>
+                            <img src="imagenes/icono-videojuegos.png">
+                            <h3>VideoJuegos</h3>
+                        </li>  
+                    </ul>
+                </div>
+            </section>
+
+            <section class="formacion-academica" id="formacion">
+                <h2 class="formacion-academica-titulo titulos">
+                    Fromación Académica
+                </h2>
+                <div class="formacion-academica-div">
+                    <ul class="formacion-lista">
+                        <li>
+                            <div>
+                                <img src="imagenes/formacion academica/UBA.png" alt="">
+                            </div>
+                            <h2>Ingeniería Informática (3 años)</h2>
+                            <h3>2002-UBA</h3>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="imagenes/formacion academica/logo_UAI.png" alt="">
+                            </div>
+                            <h2>Realización Audiovisual</h2>
+                            <h3>2005-UAI</h3>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="imagenes/formacion academica/alura.png" alt="">
+                            </div>
+                            <h2>Desarrollador Web</h2>
+                            <h3>2021-ALURA</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="experiencia" id="experiencia">
+
+                <h2 class="experiencia-titulo titulos">
+                    Experiencia Profesional
+                </h2>
+
+                <div class="experiencia-seccion">
+                    <img src="imagenes/experiencia/Codificador.png" alt="">
+                    <div class="experiencia-descripcion">
+                        <h2>
+                            Encriptador
+                        </h2>
+                        <h3>
+                            Challenge Alura
+                        </h3>
+                        <div class="button">
+                            
+                            <a class="button-repositorio" href="https://github.com/zoccojulian/challenge-01-julian" target="_blank">Repositorio</a>
+                        
+
+                            <a class="button-demo" href="https://zoccojulian.github.io/challenge-01-julian/" target="_blank">Demo</a>
+
+                        </div>
                     </div>
+                </div>
+
+                <div class="experiencia-seccion">
+                    <img src="imagenes/experiencia/Ahorcado.png" alt="">
+                    <div class="experiencia-descripcion">
+                        <h2>
+                            Juego del Ahorcado
+                        </h2>
+                        <h3>
+                            Challenge Alura
+                        </h3>
+                        <div class="button">
+                            
+                            <a class="button-repositorio" href="https://github.com/zoccojulian/challenge-02-julian" target="_blank">Repositorio</a>
+                        
+                            <a class="button-demo" href="https://zoccojulian.github.io/challenge-02-julian/" target="_blank">Demo</a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacto">
+                <div class="contacto-div-img">
+                    <img src="imagenes/telefono.png" alt="">
+                </div>
+                <div class="contacto-div-form">
+                    <div class="contacto-descripcion">
+                        <h2 class="titulos">Contacto</h2>
+                        <h3>¿Quieres contactarme?</h3>
+                        <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                    </div>
+                    <form class="contacto-form">
+                        <input type="text" id="nombreapellido" class="input-padron" required placeholder="Nombre">
+
+                        <input type="email" id="correoelectronico" class="input-padron" required placeholder="E-mail">
+                
+                        <input type="text" id="asunto" class="input-padron" required placeholder="Asunto">
+        
+                        <textarea cols="70" rows="10" class="input-padron" id="mensaje" required placeholder="Mensaje"></textarea>
+
+                        <input type="submit" value="Enviar Mensaje" class="enviar">
+                    </form>
+                </div>
+                
 
             </section>
+            
+
 
         </main>
     </body>
