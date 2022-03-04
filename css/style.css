@@ -290,11 +290,18 @@ body{
     color: #2A7AE4;
 }
 
-.button-demo{
+.button-repositorio:hover{
+    transform: scale(1.1);
+}
+
+.button-demo {
     color: white;
     background: #2A7AE4;
 }
 
+.button-demo:hover{
+    transform: scale(1.1);
+}
 
 /*contacto*/
 
@@ -350,13 +357,20 @@ body{
 .enviar{
     width: 135px;
     padding: 1em 0.8em;
+    border: 2px solid #2A7AE4;
+    color: #2A7AE4;
+}
+
+.enviar:hover{
+    background: #2A7AE4;
+    color: #EAF2FD;
 }
 
 
 
 /*---------TABLET-------------------------------*/
 
-@media (max-width: 1040px){
+@media only screen and (max-width: 1040px){
 
     /*header*/
 
@@ -460,4 +474,165 @@ body{
     .contacto-div-form{
         width: 100%;
     }
+
+    .contacto-descripcion{
+        gap: 1vh;    
+    }
+
+    .contacto-form{
+        padding-top: 1rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+    /*Perfil*/
+    .perfil-div h1{
+        font-size: 1.2em;
+    
+    }
+    
+    .perfil-div h2{
+        font-size: 0.7em;
+    }
+
+    .perfil-div-contacto a{
+        text-decoration: none;
+        font-size: 0.8em;
+        padding-right: 1rem;
+    }
+
+    /*sobreMi*/
+    .sobreMi div p{
+        font-size: 1.2rem;
+    }
+
+    /*Formacion Academica*/
+    .formacion-academica{
+        padding: 0.5rem 1rem;
+    }
+
+    .formacion-lista li div{
+        height: 100px;
+    }
+
+    .formacion-lista li h2{
+        font-size: 1em;
+    }
+    
+    .formacion-lista li h3{
+        font-size: 0.8em;
+    }
+
+    
+
+}
+
+
+@media only screen and (max-width: 440px){
+
+    
+    /*header*/
+
+    .header h3 img{
+        width: 25px;
+    }
+
+    .header h3{
+        font-size: 0.8em;
+    }
+
+    .header-nav ul li a{
+        font-size: 0.6em;
+    }
+
+    /*Perfil*/
+
+    .perfil{
+        flex-direction: column-reverse;
+        padding: 0.5rem 1rem;
+        
+    }
+
+    .perfil-div{
+        width: 100%;
+    }
+
+    .perfil-img{
+        width:100%;
+    }
+
+    .perfil-img img{
+        width: 35%;
+        padding-left: 1rem;
+    }
+
+    .perfil-div-contacto{
+        text-align: center;
+    }
+
+    /*Cambio de font-size a todos los titulos*/
+
+    .titulos{
+        font-size: 1.3em;
+    }
+
+    /*SobreMi*/
+
+    .sobreMi{
+        padding: 0.5rem 1rem;
+    }
+
+    .sobreMi div p{
+        font-size: 1rem;
+    }
+    
+    .sobreMi div img{
+        width: 70px;
+        padding-top: 1rem;
+    }
+
+
+    /*Formacion*/
+    .formacion-lista{
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .formacion-academica-div{
+        padding: 1rem 2rem;
+    }
+
+    .formacion-lista li div{
+        height: auto;
+        padding: 1.5rem 0;
+    }
+    .formacion-lista li{
+        width: 100%;
+        margin-bottom: 2rem;
+        
+    }
+
+    /*Experiencia*/
+
+    .experiencia-descripcion h2{
+        font-size: 1.5em;
+    }
+    
+    .experiencia-descripcion h3{
+        font-size: 1em;
+        
+    }
+
+
+    /*Contacto*/
+
+    .contacto-div-form{
+        padding-left: 0;
+    }
+
+
 }
