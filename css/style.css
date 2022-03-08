@@ -1,3 +1,4 @@
+
 body{
     width: 100%;
     background: #ededed;
@@ -34,6 +35,7 @@ body{
 
 .header-nav ul li{
     margin-left: 1rem;
+
 }
 
 .header-nav ul li a{
@@ -350,8 +352,12 @@ body{
     font-size: 1em;
 }
 
-#mensaje{
+.contacto-form #mensaje{
     height: 10rem;
+}
+
+.contacto-form #mensaje::placeholder{
+   font-size: 1.3em;
 }
 
 .enviar{
@@ -366,6 +372,10 @@ body{
     color: #EAF2FD;
 }
 
+
+
+/*footer*/
+
 footer{
     width: 100%;
     display: flex;
@@ -374,6 +384,7 @@ footer{
     padding: 1rem 0;
     background: #EAF2FD;
 }
+
 
 footer img{
     width: 30px;
@@ -470,6 +481,7 @@ footer h3 em{
         width: 100%
     }
 
+    
     .experiencia-seccion:nth-child(even){
         flex-direction: column;
     }
@@ -481,6 +493,7 @@ footer h3 em{
 
    .experiencia-descripcion{
         width: 100%;
+        margin-top: 1rem;
     }
 
     /*contacto*/
@@ -507,7 +520,7 @@ footer h3 em{
 
 }
 
-
+/*---------TABLET vertical / MOVIL HORIZONTAL-------------------------------*/
 @media only screen and (max-width: 768px){
 
     /*Perfil*/
@@ -517,7 +530,7 @@ footer h3 em{
     }
     
     .perfil-div h2{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .perfil-div-contacto a{
@@ -552,7 +565,7 @@ footer h3 em{
 
 }
 
-
+/*---------MOVIL MERTICAL-------------------------------*/
 @media only screen and (max-width: 440px){
 
     
@@ -611,7 +624,7 @@ footer h3 em{
     }
 
     .sobreMi div p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     .sobreMi div img{
@@ -659,5 +672,12 @@ footer h3 em{
         padding-left: 0;
     }
 
+    .contacto-descripcion h3{
+        font-size: 1em;
+    }
+
+    .contacto-descripcion p{
+        font-size: 1em;
+    }
 
 }
