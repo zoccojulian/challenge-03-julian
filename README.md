@@ -1,4 +1,4 @@
-# challenge-03-julian
+# PORTFOLIO / Challenge 3 AluraLatam
 challengeoneportafolio
 
 Desafío 3 del programa Oracle One - Alura Latam. // EN PROCESO //
