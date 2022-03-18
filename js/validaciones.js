@@ -16,7 +16,6 @@ const mensajeDeError = {
     mensaje:{
         valueMissing: "El campo mensaje no puede estar vacío"
     },
-    
 }
 
 
