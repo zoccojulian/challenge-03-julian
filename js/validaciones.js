@@ -1,9 +1,10 @@
 
-const tipoDeError =["valueMissing","patternMismatch"];
+const tipoDeError =["valueMissing","patternMismatch","tooShort"];
 
 const mensajeDeError = {
     nombre:{
-        valueMissing: "El campo nombre no puede estar vacío"
+        valueMissing: "El campo nombre no puede estar vacío",
+        tooShort: "Debe tener al menor 4 caracteres"
     },
     email:{
         valueMissing: "El campo email no puede estar vacío",
@@ -20,6 +21,7 @@ const mensajeDeError = {
 
 
 export function validar(input){
+
     if(input.validity.valid){
         input.parentElement.classList.remove("contacto--invalid");
         input.parentElement.querySelector(".mensaje-error").innerHTML="";
