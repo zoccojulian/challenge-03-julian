@@ -309,67 +309,87 @@ body{
 
 .contacto{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     padding: 0.5rem 8rem;
+    justify-content: center;
+    gap: 1vh;
 }
 
-.contacto-div-form{
-    width: 50%;
-}
-
-.contacto-descripcion{
-    display: flex;
-    flex-direction: column;
-    gap: 0.7vh;
-}
-
-.contacto-descripcion h3{
-    font-size: 1.5em;
-    font-style: italic;
-}
-
-.contacto-descripcion p{
+.contacto-box-titulos .texto{
     font-size: 1.3em;
-    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
 }
 
-.contacto-div-form{
+.contacto-box{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
     justify-content: space-between;
-    
 }
 
-.contacto-form{
+.contacto-box-form{
+    height: 80%;
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    justify-content: space-between;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
 }
 
 .input-padron{
-    height: 3rem;
+    height: 50px;
+    font-size: 1.2em;
+    border: 0px;
+    border-bottom: 1px solid #000000;
+
+}
+
+.contacto-box-form--mensaje .input-padron{
+    height: 100%;
+ }
+
+ .contacto-box-form--mensaje{
+    height: 40%;
+ }
+
+ .contacto-box-form--mensaje #mensaje::placeholder{
+    font-size: 1.5em;
+}
+
+
+.contacto--invalid .mensaje-error{
+    display: block;
     font-size: 1em;
+    color: red;
 }
 
-.contacto-form #mensaje{
-    height: 10rem;
+.mensaje-error{
+    display:none;
 }
 
-.contacto-form #mensaje::placeholder{
-   font-size: 1.3em;
+
+.contacto--invalid .input-padron{
+    border: 1px solid red;
+    color: red;
 }
+
+
 
 .enviar{
-    width: 135px;
-    padding: 1em 0.8em;
-    border: 2px solid #2A7AE4;
+    width: 130px;
+    height: 40px;
+    font-size: 0.8em;
     color: #2A7AE4;
+    border: 1px solid #2A7AE4;
 }
 
-.enviar:hover{
+.enviar .enabled:hover{
+    color: white;
     background: #2A7AE4;
-    color: #EAF2FD;
 }
 
 
@@ -498,25 +518,27 @@ footer h3 em{
 
     /*contacto*/
 
+    .contacto-img{
+        display: none;  
+    }
+
     .contacto{
         padding: 0.5rem 2rem;
     }
 
-    .contacto-div-img{
-        display: none;
-    }
-
-    .contacto-div-form{
+    .contacto-box{
         width: 100%;
     }
 
-    .contacto-descripcion{
-        gap: 1vh;    
+    .contacto-box-form{
+        height: 100%;
     }
 
-    .contacto-form{
-        padding-top: 1rem;
+    .box{
+        margin-bottom: 1rem;
     }
+
+
 
 }
 
@@ -668,16 +690,10 @@ footer h3 em{
 
     /*Contacto*/
 
-    .contacto-div-form{
-        padding-left: 0;
+    .contacto-box-titulos .texto{
+        font-size: 1.1em;
+        font-weight: 300;
     }
 
-    .contacto-descripcion h3{
-        font-size: 1em;
-    }
-
-    .contacto-descripcion p{
-        font-size: 1em;
-    }
 
 }

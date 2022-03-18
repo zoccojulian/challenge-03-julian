@@ -1,8 +1,6 @@
 
 var links = document.querySelectorAll(".header-nav a");
 
-console.log(links);
-
 links.forEach((boton) => {
     boton.addEventListener("click",function(evento){
         evento.preventDefault();

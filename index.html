@@ -245,25 +245,36 @@
             </section>
 
             <section class="contacto" id="contacto">
-                <div class="contacto-div-img">
+                <div class="contacto-img">
                     <img src="imagenes/telefono.png" alt="">
                 </div>
-                <div class="contacto-div-form">
-                    <div class="contacto-descripcion">
+                <div class="contacto-box">
+                    <div class="contacto-box-titulos">
                         <h2 class="titulos">Contacto</h2>
-                        <h3>¿Quieres contactarme?</h3>
-                        <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                        <h3 class="texto">¿Quieres contactarme?</h3>
+                        <p class="texto">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
                     </div>
-                    <form class="contacto-form">
-                        <input type="text" id="nombreapellido" class="input-padron" required placeholder="Nombre">
-
-                        <input type="email" id="correoelectronico" class="input-padron" required placeholder="E-mail">
-                
-                        <input type="text" id="asunto" class="input-padron" required placeholder="Asunto">
-        
-                        <textarea cols="70" rows="10" class="input-padron" id="mensaje" required placeholder="Mensaje"></textarea>
-
-                        <input type="submit" value="Enviar Mensaje" class="enviar">
+                    <form class="contacto-box-form">
+                        <div class="contacto-box-form--nombre box">
+                            <input type="text" id="nombreapellido" class="input-padron" placeholder="Nombre" required minlength="4" maxlength="50" data-tipo="nombre">
+                            <span class="mensaje-error">Error en los datos ingresados</span>
+                        </div>
+                        <div class="contacto-box-form--email box">
+                            <input type="email" id="correoelectronico" class="input-padron" required placeholder="E-mail" pattern="^[a-zA-Z0-9_.-]+@([a-zA-Z0-9]+\.)+([a-zA-Z]{2,4})" title="xxxxx@xxxx.xxx" data-tipo="email">
+                            <span class="mensaje-error">Error en los datos ingresados</span>
+                        </div>
+                        <div class="contacto-box-form--asunto box">
+                            <input type="text" id="asunto" class="input-padron" required placeholder="Asunto" maxlength="50" data-tipo="asunto">
+                            <span class="mensaje-error">Error en los datos ingresados</span>
+                        </div>
+                        <div class="contacto-box-form--mensaje box">
+                            <textarea cols="70" rows="10" class="input-padron" id="mensaje" required placeholder="Mensaje" maxlength="300" data-tipo="mensaje"></textarea>
+                            <span class="mensaje-error">Error en los datos ingresados</span>
+                        </div>
+                        <div>
+                            <button class="enviar">Enviar</button>
+                        </div>
+                        
                     </form>
                 </div>
             </section>
@@ -277,6 +288,7 @@
     </body>
 
     <script src="js/movimientoscroll.js"></script>
+    <script type="module" src="js/app.js"></script>
 
 </html>
 
