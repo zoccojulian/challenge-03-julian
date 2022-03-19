@@ -315,6 +315,13 @@ body{
     gap: 1vh;
 }
 
+.mensaje-enviado{
+    position: absolute;
+    background: white;
+    width: 100%;
+    height:100%;
+}
+
 .contacto-box-titulos .texto{
     font-size: 1.3em;
     font-weight: 400;
@@ -329,6 +336,7 @@ body{
 }
 
 .contacto-box-form{
+    position: relative;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -387,7 +395,7 @@ body{
     border: 1px solid #2A7AE4;
 }
 
-.enviar .enabled:hover{
+.enviar:hover{
     color: white;
     background: #2A7AE4;
 }
