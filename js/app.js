@@ -30,7 +30,6 @@ document.querySelector("form").addEventListener("submit", (event) => {
     event.preventDefault();
     document.querySelector("form").reset();
     mensajeEnviado();
-    /*falta hacer el submit
-    document.querySelector("form").submit();
-    Igualmente todabia no va a ningun lado el formulario*/
+
+    /*falta hacer el submit*/
 });
