@@ -27,9 +27,15 @@ document.querySelector(".enviar").addEventListener("click", (event) =>{
 /*escucha el formulario. Si hace submit, hace un preventdefaul para que no refresque la pantalla. Valida las entradas y imprime mensaje de "enviado"*/
 
 document.querySelector("form").addEventListener("submit", (event) => {
-    event.preventDefault();
-    document.querySelector("form").reset();
-    mensajeEnviado();
 
-    /*falta hacer el submit*/
+    event.preventDefault();
+
+    fetch("https://formsubmit.co/ajax/zoccojulian@gmail.com", {method : "POST",
+    body: new FormData(event.target)
+    }).then((respuesta) => {
+        document.querySelector("form").reset();
+        mensajeEnviado();
+    }).catch((error) => alert(error));
+    
+
 });
