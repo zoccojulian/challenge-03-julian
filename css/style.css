@@ -42,6 +42,7 @@ body{
     font-size: 0.8em;
     text-transform: uppercase;
     text-decoration: none;
+    color: black;
 }
 
 .header-nav ul li:hover{
@@ -87,6 +88,7 @@ body{
     text-decoration: none;
     font-size: 1.5em;
     padding-right: 2rem;
+    color: black;
 }
 
 .perfil-div-contacto a:hover{
