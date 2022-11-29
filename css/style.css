@@ -201,7 +201,7 @@ body{
 }
 
 .formacion-lista li{
-    width: 30%;
+    width: 23%;
 }
 
 .formacion-lista li div{
@@ -237,6 +237,7 @@ body{
 
 .experiencia-seccion img{
     width: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.474);
 }
 
 /*experiencia impar*/
